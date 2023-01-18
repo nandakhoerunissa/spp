@@ -16,17 +16,11 @@
                 </p>
                 <p>
                     <label for="nama_jurusan">Nama Jurusan :</label>
-                    <select name="nama_jurusan">
-                        <option value="RPL">RPL</option>
-                        <option value="BUSANA">BUSANA</option>
-                        <option value="BOGA">BOGA</option>
-                        <option value="TSM">TSM</option>
-                        <option value="TL">TL</option>
-                    </select>
+                    <input type="text" name="nama_jurusan" />
                 </p>
                 <p>
                     <label for="tahun">Tahun :</label>
-                    <input type="text" name="tahun" />
+                    <input type="date" name="tahun" />
                 </p>
                 <p>
                     <label for="nominal">Nominal :</label>
