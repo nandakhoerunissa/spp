@@ -1,12 +1,12 @@
 <?php
-include("koneksi.php");
-isset($_GET['simpan']);
-$kode= $_GET['id'];
-$sql = "DELETE FROM tb_siswa where id=$kode";
-$query = mysqli_query($koneksi,$sql);
+include ("koneksi.php");
 
-if($query){
-    header("Location:join-tabel.php?status=sukses");
-}else{
-    die("akses dilarang");
-}
+$id = $_GET['id_siswa'];
+
+
+mysqli_query($koneksi,"DELETE FROM tb_jurusan where id_jurusan='$id'");
+mysqli_query($koneksi,"DELETE FROM tb_spp where id_spp='$id'");
+mysqli_query($koneksi,"DELETE FROM tb_siswa where id_siswa='$id'");
+
+header("location:join-tabel.php");
+?>

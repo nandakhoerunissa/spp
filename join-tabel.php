@@ -31,6 +31,10 @@
             <td><?= $row['nama_jurusan']; ?></td>
             <td><?= $row['tahun']; ?></td>
             <td><?= $row['nominal']; ?></td>
+            <td>
+            <a href="hapus.php?id_siswa=<?= $row['id_siswa']; ?>">| Hapus</a>
+            <a href="edit.php?id_siswa=<?= $row['id_siswa']; ?>">Edit</a>
+    </tr>
     <?php endforeach; ?>
     <a href="tambah.php"><input type="button" value="Tambah"/></a>
     </table>
