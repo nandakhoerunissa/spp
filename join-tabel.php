@@ -3,7 +3,7 @@
  <title>Join Table</title>
 </head>
 <body>
-
+<center>
     <table border="1">
       <tr>
       <td>No.</td>
@@ -38,5 +38,6 @@
     <?php endforeach; ?>
     <a href="tambah.php"><input type="button" value="Tambah"/></a>
     </table>
+    </center>
     </body>
     </html>
